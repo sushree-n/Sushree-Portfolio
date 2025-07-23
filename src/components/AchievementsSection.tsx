@@ -1,6 +1,4 @@
-import { Trophy, Star, Award, Target, Zap, Heart, Users, Code2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 const AchievementsSection = () => {

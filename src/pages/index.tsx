@@ -6,7 +6,6 @@ import ProjectsSection from "@/components/ProjectsSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import ContactSection from "@/components/ContactSection";
 import AICompanion from "@/components/AICompanion";
-import TechnicalSkillsSection from "@/components/TechnicalSkillsSection";
 
 const Index = () => {
   const [currentSection, setCurrentSection] = useState("hero");

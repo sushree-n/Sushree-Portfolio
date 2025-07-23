@@ -1,6 +1,5 @@
 import { GraduationCap, Calendar, MapPin, Award } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 const EducationSection = () => {

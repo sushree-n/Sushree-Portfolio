@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, ExternalLink, MessageCircle, Users } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import emailjs from 'emailjs-com';
 import { toast } from '@/components/ui/use-toast';
@@ -21,28 +20,6 @@ const ContactSection = () => {
     message: ""
   });
 
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "sushreen1@gmail.com",
-      link: "mailto:sushreen1@gmail.com"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "716-910-7704",
-      link: "tel:7169107704"
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Buffalo, New York",
-      link: "#"
-    }
-  ];
-
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -53,7 +30,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
-      .then((result) => {
+      .then(() => {
         toast({
           title: 'Thank you!',
           description: 'Your message was sent successfully.',

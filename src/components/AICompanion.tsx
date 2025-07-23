@@ -104,12 +104,6 @@ const AICompanion = ({ onNavigate, currentSection }: AICompanionProps) => {
     }
   };
 
-  const handleBack = () => {
-    onNavigate('hero');
-    setSectionHistory(['hero']);
-    setCurrentMessage(0);
-  };
-
   if (collapsed) {
     // Show static message on hero, dynamic message otherwise
     let collapsedMessage = currentSection === 'hero'

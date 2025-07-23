@@ -33,7 +33,9 @@ const InputOTPSlot = React.forwardRef<
   React.ComponentPropsWithoutRef<"div"> & { index: number }
 >(({ index, className, ...props }, ref) => {
   const inputOTPContext = React.useContext(OTPInputContext)
-  const { char, hasFakeCaret, isActive } = inputOTPContext.slots[index]
+  // Before destructuring, assert the type of inputOTPContext
+  const context = inputOTPContext as any;
+  const { char, hasFakeCaret, isActive } = context.slots[index];
 
   return (
     <div

@@ -1,5 +1,3 @@
-import React from "react";
-
 const skills = {
   "AI/ML & NLP": [
     "Transformers", "Hugging Face", "OpenAI API", "Gemini Flash", "TensorFlow", "PyTorch", "Scikit-learn", "PEFT", "Prompting", "GNN", "NLP", "PyTesseract", "OpenCV"

@@ -1,7 +1,6 @@
-import { Briefcase, Calendar, MapPin, ExternalLink, Code, Users, TrendingUp } from "lucide-react";
+import { Briefcase, Calendar, MapPin, Code, TrendingUp } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 
 const ExperienceSection = () => {
