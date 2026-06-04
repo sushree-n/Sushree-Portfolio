@@ -8,7 +8,7 @@ const EducationSection = () => {
       school: "University at Buffalo, The State University of New York",
       degree: "Masters of Science in Computer Science and Engineering, AI/ML Specialization",
       location: "Buffalo, New York",
-      date: "Expected Dec 2025",
+      date: "Aug 2024 – Dec 2025",
       gpa: "3.78/4",
       achievements: [
         "Participated in the 'AI for Good' Hackathon at UB and created QuizzBee. Presented it to a panel of AI researchers and industry professionals; recognized for applying LLMs to enhance personalized, accessible learning tools.",

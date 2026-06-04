@@ -14,6 +14,14 @@ import { motion } from "framer-motion";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Vantage AI",
+      description: "Competitive-intelligence co-pilot for startups, built at the Veris AI Enterprise Agents Jam in NYC. Orchestrates a multi-agent pipeline — voice input via VoiceRun STT, a CrewAI orchestrator that dispatches a Researcher agent pulling live web data (You.com) and on-demand SEC EDGAR financials (edgartools/XBRL), and an Analyst agent that outputs structured JSON scores. Results are served through a FastAPI + React UI with Cartesia TTS, stress-tested via a Veris AI 10-run scenario suite.",
+      technologies: ["CrewAI", "Baseten (DeepSeek-V3.1)", "You.com Research API", "SEC EDGAR", "edgartools", "VoiceRun STT", "Cartesia TTS", "Veris AI", "FastAPI", "React", "Python"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/sushree-n/vantage-ai",
+      image: "🏆"
+    },
+    {
       title: "Drug Discovery Using Deep Learning",
       description: "A multimodal deep learning framework that fuses graph topology, chemical language, substructure patterns, and 3D molecular descriptors to accurately predict key drug-likeness properties (logP, logD, logS). Integrated with an LLM for automatic scientific report generation and deployed via a fullstack Flask-React web app.",
       technologies: ["Graph Neural Networks", "LLMs", "Flask", "React", "Python", "PyTorch", "DeepChem", "DeepSeek"],
@@ -136,9 +144,9 @@ const ProjectsSection = () => {
                         <Button 
                           variant="playful-primary" 
                           size="sm" 
-                          className={`flex-1${['Foodle', 'Krushak', 'O-Zone', 'OCR for Regional Languages', 'QuizzBee'].some(title => project.title.includes(title)) ? ' opacity-50 cursor-not-allowed pointer-events-none' : ''}`}
+                          className={`flex-1${['Foodle', 'Krushak', 'O-Zone', 'OCR for Regional Languages', 'QuizzBee', 'Vantage AI'].some(title => project.title.includes(title)) ? ' opacity-50 cursor-not-allowed pointer-events-none' : ''}`}
                           asChild
-                          {...(['Foodle', 'Krushak', 'O-Zone', 'OCR for Regional Languages', 'QuizzBee'].some(title => project.title.includes(title)) ? { tabIndex: -1, 'aria-disabled': true } : {})}
+                          {...(['Foodle', 'Krushak', 'O-Zone', 'OCR for Regional Languages', 'QuizzBee', 'Vantage AI'].some(title => project.title.includes(title)) ? { tabIndex: -1, 'aria-disabled': true } : {})}
                         >
                           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="w-4 h-4 mr-2" />

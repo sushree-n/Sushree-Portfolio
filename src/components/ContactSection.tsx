@@ -172,7 +172,7 @@ const ContactSection = () => {
                   <MapPin className="w-5 h-5 text-ai-glow" />
                   <div>
                     <div className="text-sm font-medium">Location</div>
-                    <div className="text-sm text-muted-foreground">Buffalo, New York</div>
+                    <div className="text-sm text-muted-foreground">New York City, New York</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-4 rounded-lg bg-muted/50">

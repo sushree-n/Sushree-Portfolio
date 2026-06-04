@@ -6,11 +6,37 @@ import { motion } from "framer-motion";
 const ExperienceSection = () => {
   const experiences = [
     {
+      company: "New York Life Insurance",
+      role: "Fullstack AI Engineer",
+      period: "Jan 2026 – Present",
+      type: "Full-time",
+      location: "New York, NY",
+      technologies: [
+        "AWS Kendra",
+        "AWS Bedrock",
+        "RAG",
+        "Go",
+        "OPA",
+        "ABAC",
+        "Python",
+        "React",
+        "TypeScript",
+        "REST API"
+      ],
+      description: "Building enterprise-grade AI and search infrastructure to modernize insurance agent workflows at New York Life.",
+      achievements: [
+        "Architected and deployed an enterprise-grade semantic search platform on AWS Kendra + Bedrock, replacing a legacy Lucidworks lexical system; integrated 11 data source connectors with custom preprocessing, guardrails, autocomplete, spell-check, and trending queries — delivering an 800% improvement in search relevance and significantly reducing agent lookup time.",
+        "Built an AI Overview feature that generates citation-backed summaries of the top 20 retrieved documents using RAG, enabling insurance agents to surface policy and product insights from natural-language queries instantly.",
+        "Developed an authorization service in Go for the GuideMe agent platform, implementing Attribute-Based Access Control (ABAC) via OPA (Open Policy Agent) with feature toggles that allow administrators to gate/ungate application sections per user group."
+      ],
+      metrics: {}
+    },
+    {
       company: "Relate CX",
       role: "AI Engineer Intern",
-      period: "May 2025 – Present",
+      period: "May 2025 – Dec 2025",
       type: "Internship",
-      location: "Buffalo, New York",
+      location: "Buffalo, New York (Remote)",
       technologies: [
         "Google Cloud Platform",
         "Vertex AI",
@@ -21,16 +47,27 @@ const ExperienceSection = () => {
         "Prompt Gallery",
         "PEFT",
         "Prompt Engineering",
+        "FAISS",
+        "LangChain",
+        "Vapi",
+        "LiveKit",
+        "Five9s",
+        "ElevenLabs",
+        "Cartesia",
+        "Redis",
         "Python"
       ],
-      description: "Developed a multi-label classification system using LLMs for job type prediction in the HVAC, Electric, and Plumbing industries.",
+      description: "Designed and deployed AI-powered voice and RAG systems to automate classification and agent workflows across enterprise clients.",
       achievements: [
         "Fine-tuned Gemini Flash LLM for classification tasks using PEFT (Parameter-Efficient Fine-Tuning), enabling targeted prediction of job types across 200+ HVAC, Electric, and Plumbing companies.",
         "Designed and tested advanced prompting techniques including zero-shot, few-shot, and chain-of-thought reasoning to improve LLM performance on noisy call summaries and service data.",
-        "Evaluated and benchmarked multiple strategies RAG, PEFT, embedding-based retrieval to determine the most scalable approach for dynamic job type classification.",
+        "Evaluated and benchmarked multiple strategies — RAG, PEFT, embedding-based retrieval — to determine the most scalable approach for dynamic job type classification.",
         "Engineered custom prompts and classification schemas to enable LLMs to perform multi-label classification on real-world, unstructured industry data.",
-        "Preprocessed and cleaned large-scale, heterogenous datasets with over 40,000+ records across trade-specific domains; automated pipeline development improved system scalability and accuracy.",
-        "Leveraged GCP's Vertex AI, Prompt Gallery, Model Garden, GenAI SDK, and Batch APIs for model training, prompt iteration, and inference deployment."
+        "Preprocessed and cleaned large-scale, heterogeneous datasets with 40,000+ records across trade-specific domains; automated pipeline development improved system scalability and accuracy.",
+        "Leveraged GCP's Vertex AI, Prompt Gallery, Model Garden, GenAI SDK, and Batch APIs for model training, prompt iteration, and inference deployment.",
+        "Designed and deployed Retrieval-Augmented Generation (RAG) systems using FAISS vector databases and embeddings to classify 40K+ unstructured call records across 200+ enterprises.",
+        "Built voice AI agents using Vapi and LiveKit with LangChain-based multi-agent orchestration, integrating Five9s telephony and multiple voice providers (ElevenLabs, Cartesia) to enable autonomous reasoning, external API/tool use, and real-time streaming pipelines with Redis.",
+        "Deployed scalable pipelines on GCP Vertex AI including monitoring to ensure reliability, privacy, and compliance; drove up to $50K/month in cost savings and mentored 2 interns on prompt engineering and agentic AI workflows."
       ],
       metrics: {}
     },
@@ -202,7 +239,7 @@ const ExperienceSection = () => {
               <div>
                 <h4 className="font-semibold text-foreground mb-4">AI/ML & NLP</h4>
                 <ul className="space-y-2">
-                  {["Transformers", "Hugging Face", "OpenAI API", "Gemini Flash", "TensorFlow", "PyTorch", "Scikit-learn", "PEFT", "Prompting", "GNN", "NLP", "PyTesseract", "OpenCV"].map((skill, idx) => (
+                  {["Transformers", "Hugging Face", "OpenAI API", "Gemini Flash", "TensorFlow", "PyTorch", "Scikit-learn", "PEFT", "RAG", "LangChain", "Prompting", "GNN", "NLP", "PyTesseract", "OpenCV"].map((skill, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-ai-success"></span>
                       <span className="text-sm">{skill}</span>
@@ -235,7 +272,7 @@ const ExperienceSection = () => {
               <div>
                 <h4 className="font-semibold text-foreground mb-4">Cloud & DevOps</h4>
                 <ul className="space-y-2">
-                  {["GCP", "Vertex AI", "GenAI SDK", "Model Garden", "AWS", "Amplify", "Cognito", "S3", "Docker", "Render", "Git", "Postman"].map((skill, idx) => (
+                  {["GCP", "Vertex AI", "GenAI SDK", "Model Garden", "AWS", "Kendra", "Bedrock", "Amplify", "Cognito", "S3", "Docker", "Render", "Git", "Go", "OPA"].map((skill, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-ai-warning"></span>
                       <span className="text-sm">{skill}</span>
